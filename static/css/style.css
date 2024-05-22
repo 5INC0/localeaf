@@ -1,0 +1,161 @@
+
+
+h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 36px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 37px;
+    padding: 20px 
+} 
+
+
+
+h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 120px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 110px; 
+} 
+    
+h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 26px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 27px;
+} 
+
+
+h5 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 29px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 30px;
+} 
+
+p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: black;
+    font-size: 22px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 23px; 
+} 
+
+blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: green;
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; 
+}
+
+pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.57143px; 
+}
+
+    
+.brandcolor {
+    background-color: #226F54;
+}
+    
+.copyright { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 10px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 11px; 
+    position: absolute;
+    bottom: 0;
+    left: 3px;
+}
+    
+.btn {
+    color: white;
+    background-color: #226F54;
+}
+
+.bodycolor {
+    color: #F5F4E6;
+}
+
+.bcolor {
+    background-color: #F5F4E6;
+    }
+
+.bcolor2 {
+    background-color: #0F4143;
+}
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    }
+    
+
+.xborder {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #0F4143;
+    border-radius: 10px;
+}
+
+.login_bg {
+    background-image: url("{% static 'css/assets/bg-login.png' %}");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(255,255,255, 0.25)
+}
+
+.text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #F5F4E6;
+    font-size: 15px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 16px; 
+}
+
+.navtext { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #F5F4E6;
+    font-size: 19px;
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 16px; 
+}
+
+.divider {
+border: 0; 
+height: 2px; 
+background-color: #0F4143;
+margin: 20px 0;
+}
+
+.divider2 {
+    border: 0; 
+    height: 2px; 
+    background-color: #F5F4E6;
+    margin: 20px 0;
+}
+
+.colcenter {
+    display: grid;
+    grid-auto-flow: column;
+    gap: 4px;
+    align-items: center;
+    justify-items: center;
+}

@@ -1,0 +1,324 @@
+{% load static %}
+
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+
+<style>
+  h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 36px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 37px;
+    padding: 20px } 
+    
+    h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 120px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 110px; } 
+    
+    h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #226F54;
+        font-size: 26px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 27px;
+    } 
+    
+    h5 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #226F54;
+        font-size: 29px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 30px;
+    } 
+    
+    p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: black;
+    font-size: 22px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 23px; } 
+    
+    blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: green;
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; }
+    
+    pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.57143px; }
+    
+    .brandcolor {
+        background-color: #226F54;
+    }
+    
+    .copyright { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        font-size: 10px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 11px; 
+        position: absolute;
+        bottom: 0;
+        left: 3px;
+    }
+    
+    .btn {
+        color: white;
+        background-color: #226F54;
+    }
+    
+    .bodycolor {
+        color: #F5F4E6;
+    }
+    
+    .bcolor {
+        background-color: #F5F4E6;
+      }
+    
+    .bcolor2 {
+        background-color: #0F4143;
+    }
+    
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+      
+    
+    .xborder {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0F4143;
+        border-radius: 10px;
+    }
+    
+    .login_bg {
+        background-image: url("{% static 'css/assets/bg-login.png' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255,255,255, 0.25)
+    }
+    
+    .text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #F5F4E6;
+        font-size: 15px;
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 16px; 
+    }
+    
+    .navtext { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #F5F4E6;
+        font-size: 19px;
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 16px; 
+    }
+    
+    .divider {
+    border: 0; 
+    height: 2px; 
+    background-color: #0F4143;
+    margin: 20px 0;
+    }
+    
+    .divider2 {
+        border: 0; 
+        height: 2px; 
+        background-color: #F5F4E6;
+        margin: 20px 0;
+    }
+    
+    .colcenter {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 4px;
+        align-items: center;
+        justify-items: center;
+    }
+</style>
+
+
+<header>
+
+</header>
+
+<body>
+  <div class="container-fluid">
+      <div class="row">
+              <div class="col-sm-2 bcolor2">
+                <div class="mx-auto sticky">
+                  <h4 class="bodycolor h4 p-4 text-center mt-2"><img class="center-block" src="{% static 'css/assets/1.png' %}" width="70" height="70" alt="Localeaf"><strong>LOCALEAF PRODUCE</strong></h1>
+                  <a role="button" href="{% url 'supplier' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/1.png' %}" width="25" height="25" alt="Localeaf">  Dashboard</a>
+                  <a role="button" href="{% url 's_inventory' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/2.png' %}" width="25" height="25" alt="Localeaf">  Inventory</a>
+                  <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/4.png' %}" width="25" height="25" alt="Localeaf">  Payout</button><br><br><br><br>
+                  <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/5.png' %}" width="25" height="25" alt="Localeaf">  Profile</button>
+                  <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/6.png' %}" width="25" height="25" alt="Localeaf">  Settings</button>
+                  <a role="button" href="{% url 'home' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/7.png' %}" width="25" height="25" alt="Localeaf">  Logout</a><br><br><br><br>
+                  <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/8.png' %}" width="25" height="25" alt="Localeaf">  Help</button><br>
+                </div>
+            </div>
+          <div class="col bcolor">
+            <div class="container-fluid">
+              <br>
+              <div class="row align-contents-center">
+                <div class="col-sm-7 m-3">
+                  <h4>WELCOME BACK,</h4><h5><u>Supplier!</u></h5>
+                </div> 
+
+                <div class="col mt-3 bodycolor">
+
+                  <div class="btn-group">
+                    <div class="row">
+                      <div class="col">
+
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img class="" src="{% static 'css/assets/person.png' %}" width="50" height="50" alt="Person"><strong>Supplier</strong></button>
+                          <div class="dropdown-menu">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                          </div>
+                        </div>
+
+                        <div class="btn-group">
+                          <button class="btn btn-secondary btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <img class="" src="{% static 'css/assets/bell.png' %}" width="50" height="50" alt="Person">
+                          </button>
+                          <div class="dropdown-menu">
+                            <button class="dropdown-item" type="button">Action</button>
+                            <button class="dropdown-item" type="button">Another action</button>
+                            <button class="dropdown-item" type="button">Something else here</button>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                    
+                </div> 
+
+              </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col bcolor2 border rounded p-4 align-items-center">
+                  <h4 class="bodycolor">Orders</h4>
+                  <table class="table bodycolor text-center">
+                    <thead class="thead">
+                      <th scope="col">Order <br>Placed <br>By</th>
+                      <th scope="col">Item</th>
+                      <th scope="col">Total Quantity <br>(in kg)</th>
+                      <th scope="col">Placed <br>on</th>
+                      <th scope="col">Location</th>
+                      <th scope="col">Status</th>
+                      <th scope="col">Options</th>
+                    
+                    <tbody>
+                      {% for o in orders %}
+                          <tr>
+                            <td>{{ o.placed_by }}</td>
+                            <td>{{ o.item }}</td>
+                            <td>{{ o.quantity }}</td>
+                            <td>{{ o.created_on }}</td>
+                            <td>{{ o.location }}</td>
+                            <td>{{ o.status }}</td>
+                            <td>
+                              {% if o.status == 'Pending Payment' or o.status == 'Payment Sent' %}
+                              <a style="color: white; background-color:gray;" href="{% url 'receive_payment' pk=o.pk %}"  class="btn m-1">Receive <br> Payment</a>
+                              <a href="{% url 'accept_order' pk=o.pk %}"  class="btn m-1">Accept</a>
+                              <a style="color: white; background-color:red;" href="{% url 'decline_order' pk=o.pk %}"  class="btn m-1">Decline</a>
+
+                              {% else %}
+                              <a style="color: white; background-color:gray;" href="{% url 'sent_order' pk=o.pk %}"  class="btn m-1">Sent</a>
+                              <a style="color: white; background-color:red;" href="{% url 'decline_order' pk=o.pk %}"  class="btn m-1">Decline</a>
+                            </td>
+                          </tr>
+                          {% endif %}
+                        {% endfor %}
+                    </tbody>
+                  </table>
+                </div>
+
+                <div class="col-sm-3">
+                  <div class="col bcolor2 border rounded p-4">
+                    <h4 class="bodycolor text-center">Total Sales</h4>
+                    <h5 class="text-center bodycolor"> PHP {{ total_revenue }} </h5>
+                  </div>
+                  <div class="col bcolor2 border rounded pt-4 mt-2">
+                    <h4 class="bodycolor">Total Inventory</h4>
+                    <div class="container bodycolor">
+                      <table class="table bodycolor text-center">
+                        <thead class="thead">
+                          <th scope="col">Item</th>
+                          <th scope="col">Total Quantity <br>(in kg)</th>
+                        
+                        <tbody>
+
+                          {% for item in total_quantity %}
+                            <tr>
+                              <td>{{ item.item }}</td>
+                              <td>{{ item.total_quantity }}</td>
+                            </tr>
+                          {% endfor %}
+    
+                        </tbody>
+                      </table>
+                    </div> 
+                  </div>
+                  
+                  <div class="col bcolor2 border rounded p-4 mt-2">
+                  <h4 class="bodycolor mt-3">Add Stock</h4>
+                  
+                  <form class="bodycolor" method="POST" action="{% url 'supplier' %}">{% csrf_token %}
+
+                    <label for="name">Supplier Name:</label>
+                    <input type="text" class="form-control w-20 mb-3" id="name" name="name" value="Supplier" readonly>
+  
+                    <label for="item">Item:</label>
+                    <select name="item" id="item" class="form-select w-20 mb-3" aria-label="Default select example">
+                      <option selected>Choose</option>
+                      <option value="Bok Choy">Bok Choy</option>
+                      <option value="Trimmed Brocolli">Trimmed Brocolli</option>
+                      <option value="Green Lettuce">Green Lettuce</option>
+                    </select>
+  
+                    <label for="quantity">Quantity (in kg/s):</label>
+                    <input type="text" class="form-control w-20 mb-3" id="quantity" name="quantity" placeholder="in Kilos" required>
+  
+                    <button type="submit" class="mt-3 btn mx-auto d-block">Submit</button>
+                  </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+      </div>
+  </div>
+</body>
+
+</html>

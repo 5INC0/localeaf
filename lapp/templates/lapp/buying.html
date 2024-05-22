@@ -1,0 +1,313 @@
+{% load static %}
+
+<html>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+<style>
+  h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 36px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 37px;
+    padding: 20px } 
+    
+    h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: #226F54;
+    font-size: 120px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 110px; } 
+    
+    h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #226F54;
+        font-size: 26px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 27px;
+    } 
+    
+    h5 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #226F54;
+        font-size: 29px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 700; 
+        line-height: 30px;
+    } 
+    
+    p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: black;
+    font-size: 22px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 23px; } 
+    
+    blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    color: green;
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; }
+    
+    pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.57143px; }
+    
+    .brandcolor {
+        background-color: #226F54;
+    }
+    
+    .copyright { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        font-size: 10px; 
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 11px; 
+        position: absolute;
+        bottom: 0;
+        left: 3px;
+    }
+    
+    .btn {
+        color: white;
+        background-color: #226F54;
+    }
+    
+    .bodycolor {
+        color: #F5F4E6;
+    }
+    
+    .bcolor {
+        background-color: #F5F4E6;
+      }
+    
+    .bcolor2 {
+        background-color: #0F4143;
+    }
+    
+    .sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 0;
+      }
+      
+    
+    .xborder {
+        border-style: solid;
+        border-width: 1px;
+        border-color: #0F4143;
+        border-radius: 10px;
+    }
+    
+    .login_bg {
+        background-image: url("{% static 'css/assets/bg-login.png' %}");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: rgba(255,255,255, 0.25)
+    }
+    
+    .text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #F5F4E6;
+        font-size: 15px;
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 16px; 
+    }
+    
+    .navtext { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+        color: #F5F4E6;
+        font-size: 19px;
+        font-style: normal; 
+        font-variant: normal; 
+        font-weight: 400; 
+        line-height: 16px; 
+    }
+    
+    .divider {
+    border: 0; 
+    height: 2px; 
+    background-color: #0F4143;
+    margin: 20px 0;
+    }
+    
+    .divider2 {
+        border: 0; 
+        height: 2px; 
+        background-color: #F5F4E6;
+        margin: 20px 0;
+    }
+    
+    .colcenter {
+        display: grid;
+        grid-auto-flow: column;
+        gap: 4px;
+        align-items: center;
+        justify-items: center;
+    }
+</style>
+
+<header>
+
+</header>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-2 bcolor2">
+        <div class="mx-auto sticky">
+          <h4 class="bodycolor h4 p-4 text-center mt-2"><img class="center-block" src="{% static 'css/assets/1.png' %}" width="70" height="70" alt="Localeaf"><strong>LOCALEAF PRODUCE</strong></h1>
+            <a role="button" href="{% url 'buyer' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/1.png' %}" width="25" height="25" alt="Localeaf">  Dashboard</a>
+            <a role="button" href="{% url 'b_orderhistory' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/2.png' %}" width="25" height="25" alt="Localeaf">  History</a>
+          <a role="button" href="{% url 'buying' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/3.png' %}" width="25" height="25" alt="Localeaf">  Buy</a><br><br><br><br>
+          <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/5.png' %}" width="25" height="25" alt="Localeaf"> Profile</button>
+          <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/6.png' %}" width="25" height="25" alt="Localeaf"> Settings</button>
+          <a role="button" href="{% url 'home' %}" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/7.png' %}" width="25" height="25" alt="Localeaf">  Logout</a><br><br><br><br>
+          <button type="button" class="btn btn-block btn-lg text-left pl-4"><img src="{% static 'css/assets/navbar-icons/8.png' %}" width="25" height="25" alt="Localeaf"> Help</button><br>
+        </div>
+      </div>
+      
+      <div class="col-sm-10 bcolor">
+        <div class="container-fluid">
+          <br>
+          <div class="row align-contents-center">
+            <div class="col-sm-7 m-3">
+              <h4>WELCOME BACK,</h4><h5><u>Buyer!</u></h5>
+            </div>
+
+            <div class="col mt-3 bodycolor">
+
+              <div class="btn-group">
+                <div class="row">
+                  <div class="col">
+
+                    <div class="btn-group">
+                      <button class="btn btn-secondary btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img class="" src="{% static 'css/assets/person.png' %}" width="50" height="50" alt="Person">
+                        <strong>Buyer</strong>
+                      </button>
+                      <div class="dropdown-menu">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                      </div>
+                    </div>
+
+                    <div class="btn-group">
+                      <button class="btn btn-secondary btn-md dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <img class="" src="{% static 'css/assets/bell.png' %}" width="50" height="50" alt="Person">
+                      </button>
+                      <div class="dropdown-menu">
+                        <button class="dropdown-item" type="button">Action</button>
+                        <button class="dropdown-item" type="button">Another action</button>
+                        <button class="dropdown-item" type="button">Something else here</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr class="divider">
+        <div class="row">
+          <div class="col-sm-3 bcolor2 border rounded p-4 mx-3">
+            <h4 class="bodycolor mt-3">Create Order</h4>
+            
+            <form class="bodycolor" method="POST" action="{% url 'buying' %}">{% csrf_token %}
+
+              <label for="placed_by">Order Placed by:</label>
+              <input type="text" class="form-control w-20 mb-3" id="placed_by" name="placed_by" value="Buyer" readonly>
+              
+              <label for="supplier">Supplier Name:</label>
+              <select name="supplier" id="supplier" class="form-select w-20 mb-3" aria-label="Default select example">
+                <option selected>Choose</option>
+                <option value="Supplier">Supplier</option>
+              </select><br>
+
+              <label for="item">Item:</label>
+              <select name="item" id="item" class="form-select w-20 mb-3" aria-label="Default select example">
+                <option selected>Choose</option>
+                <option value="Bok Choy">Bok Choy</option>
+                <option value="Trimmed Brocolli">Trimmed Brocolli</option>
+                <option value="Green Lettuce">Green Lettuce</option>
+              </select>
+
+              <label for="quantity">Quantity (in kg/s):</label>
+              <input type="text" class="form-control w-20 mb-3" id="quantity" name="quantity" placeholder="in Kilos" required>
+
+              <label for="location">Buyer Location:</label>
+              <input type="text" class="form-control w-20 mb-3" id="location" name="location" placeholder="City" required>
+
+              <button type="submit" class="mt-3 btn mx-auto d-block">Submit</button>              
+            </form>
+
+            {% if messages %}
+            <ul class="messages">
+                {% for message in messages %}
+                <p {% if message.tags %} class="{{ message.tags }}"{% endif %}> {{ message }} </p>
+                {% endfor %}
+            </ul>
+            {% endif %}
+            
+          </div>
+
+          <div class="col bcolor2 border rounded p-4 mr-3">
+            <h4 class="bodycolor mt-3">Products</h4>
+            <label for="supplier" class="bodycolor">Supplier Name:</label>
+              <select name="supplier" id="supplier" class="form-select w-20 mb-3" aria-label="Default select example">
+                <option>Choose</option>
+                <option value="Supplier" selected>Supplier</option>
+              </select><br>
+            <div class="card">
+              <div class="row p-3">
+                <div class="col- align-contents-center">
+                  <img src="{% static 'css/assets/brocolli.jpg' %}" width="100" height="100" alt="Localeaf">
+                </div>
+                <div class="col">
+                  <h4>Broccoli (Php 200 per kilo)</h4>
+                  <p style="font-size: 14px; ">Farm-fresh, nutrient-rich broccoli, perfect for enhancing your meals with essential vitamins and antioxidants. Enjoy the convenience of having this versatile and delicious superfood delivered right to your doorstep.</p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="row p-3">
+                <div class="col-2 align-contents-center">
+                  <img src="{% static 'css/assets/bokchoy.jpg' %}" width="100" height="100" alt="Localeaf">
+                </div>
+                <div class="col">
+                  <h4>Bok Choy (Php 100 per kilo)</h4>
+                  <p style="font-size: 14px; ">Fresh, crisp bok choy, ideal for adding a nutritious and flavorful touch to your stir-fries and salads. Rich in vitamins A and C, bok choy is a versatile leafy green that supports overall health and wellness.</p>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div class="card">
+              <div class="row p-3">
+                <div class="col-2 align-contents-center">
+                  <img src="{% static 'css/assets/lettuce.jpg' %}" width="100" height="100" alt="Localeaf">
+                </div>
+                <div class="col">
+                  <h4>Lettuce (Php 200 per kilo)</h4>
+                  <p style="font-size: 14px; ">Vibrant, fresh green lettuce, perfect for creating crisp, refreshing salads. Packed with vitamins A and K, green lettuce adds a nutritious and delicious element to any meal.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+  </div>
+</body>
+
+</html>

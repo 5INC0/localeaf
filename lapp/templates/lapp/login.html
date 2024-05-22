@@ -1,0 +1,213 @@
+{% load static %}
+
+<html>
+  
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"/>
+
+
+  <style>
+    h1 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      color: #226F54;
+      font-size: 36px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 700; 
+      line-height: 37px;
+      padding: 20px } 
+      
+      h3 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      color: #226F54;
+      font-size: 120px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 700; 
+      line-height: 110px; } 
+      
+      h4 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+          color: #226F54;
+          font-size: 26px; 
+          font-style: normal; 
+          font-variant: normal; 
+          font-weight: 700; 
+          line-height: 27px;
+      } 
+      
+      h5 { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+          color: #226F54;
+          font-size: 29px; 
+          font-style: normal; 
+          font-variant: normal; 
+          font-weight: 700; 
+          line-height: 30px;
+      } 
+      
+      p { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      color: black;
+      font-size: 22px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 400; 
+      line-height: 23px; } 
+      
+      blockquote { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      color: green;
+      font-size: 21px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 400; 
+      line-height: 30px; }
+      
+      pre { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+      font-size: 13px; 
+      font-style: normal; 
+      font-variant: normal; 
+      font-weight: 400; 
+      line-height: 18.57143px; }
+      
+      .brandcolor {
+          background-color: #226F54;
+      }
+      
+      .copyright { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+          font-size: 10px; 
+          font-style: normal; 
+          font-variant: normal; 
+          font-weight: 400; 
+          line-height: 11px; 
+          position: absolute;
+          bottom: 0;
+          left: 3px;
+      }
+      
+      .btn {
+          color: white;
+          background-color: #226F54;
+      }
+      
+      .bodycolor {
+          color: #F5F4E6;
+      }
+      
+      .bcolor {
+          background-color: #F5F4E6;
+        }
+      
+      .bcolor2 {
+          background-color: #0F4143;
+      }
+      
+      .sticky {
+          position: -webkit-sticky;
+          position: sticky;
+          top: 0;
+        }
+        
+      
+      .xborder {
+          border-style: solid;
+          border-width: 1px;
+          border-color: #0F4143;
+          border-radius: 10px;
+      }
+      
+      .login_bg {
+          background-image: url("{% static 'css/assets/bg-login.png' %}");
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-color: rgba(255,255,255, 0.25)
+      }
+      
+      .text { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+          color: #F5F4E6;
+          font-size: 15px;
+          font-style: normal; 
+          font-variant: normal; 
+          font-weight: 400; 
+          line-height: 16px; 
+      }
+      
+      .navtext { font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; 
+          color: #F5F4E6;
+          font-size: 19px;
+          font-style: normal; 
+          font-variant: normal; 
+          font-weight: 400; 
+          line-height: 16px; 
+      }
+      
+      .divider {
+      border: 0; 
+      height: 2px; 
+      background-color: #0F4143;
+      margin: 20px 0;
+      }
+      
+      .divider2 {
+          border: 0; 
+          height: 2px; 
+          background-color: #F5F4E6;
+          margin: 20px 0;
+      }
+      
+      .colcenter {
+          display: grid;
+          grid-auto-flow: column;
+          gap: 4px;
+          align-items: center;
+          justify-items: center;
+      }
+  </style>
+
+    <header class="p-3 mb-3 border-bottom sticky-top brandcolor">
+        <div class="container justify-content-between brandcolor">
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <img src="{% static 'css/assets/1.png' %}" width="50" height="50" alt="Localeaf">
+            <h1 class="text-white">LOCALEAF</h1>
+
+            <ul class="nav offset-md-5">
+              <li><a href="" class="nav-link px-2 text-white link-secondary">Products</a></li>
+              <li><a href="#" class="nav-link px-2 text-white link-dark">FAQs</a></li>
+            </ul>
+    
+            <button type="button" class="btn border border-white m-2">Sign-up</button>
+            <button type="button" class="btn border border-white">Login</button>
+          </div>
+        </div>
+      </header>
+
+    <body class="bcolor">
+    <div class="row m-4">
+      <div class="col-8 p-5">
+
+        <h3>LOCALEAF<br>PRODUCE</h3>
+        <p></p>
+        <p>
+          Source affordable, local, and quality produce from <br> Southern Luzon easily and efficiently for your restaurants!
+          <br>
+          <br>
+          Your orders are safe with us. Let us be your trade secret!!
+        </p>
+
+        <button type="button" class="btn">Sign-up</button>
+        <button type="button" class="btn">Login</button>
+      </div>
+
+      <div class="col-4 login_bg p-5 text rounded"> 
+      <div class="mb-3 text">
+        <label for="EA" class="form-label">Username</label>
+        <input type="email" class="form-control" id="EA" placeholder="Username">
+      </div>
+
+      <div class="mb-3 text">
+        <label for="EA2" class="form-label">Password</label>
+        <input type="password" class="form-control" id="EA" placeholder="******">
+
+        <a role="button" href="{% url 'supplier' %}" class="btn mt-3">Login as Supplier</a>
+        <a role="button" href="{% url 'buyer' %}" class="btn mt-3">Login as Buyer</a>
+      </div>
+
+      <div class="copyright position-absolute top-100 start-100 translate-middle text-end"> Art by: Fernando Amorsolo </div>
+      </div>
+    </div>
+    </body>
+</html>
